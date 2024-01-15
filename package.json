@@ -2,6 +2,7 @@
   "name": "fitness-app-ts-react",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://yeshchyrova.github.io/fitness-app-ts-react/",
   "type": "module",
   "scripts": {
     "dev": "vite",
