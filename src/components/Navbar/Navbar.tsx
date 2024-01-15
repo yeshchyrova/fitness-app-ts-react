@@ -6,6 +6,7 @@ import { pages } from "@/shared/constants";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export interface INavbar {
   selectedPage: SelectedPage;
@@ -26,10 +27,16 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-            <img src={Logo} alt="logo" />
+            <AnchorLink
+              onClick={() => setSelectedPage(SelectedPage.Home)}
+              href="#home"
+            >
+              <img src={Logo} alt="logo" />
+            </AnchorLink>
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
-                {/* navigate */}
+
+                {/* NAVIGATE */}
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   {pages.map((page) => (
                     <Link
@@ -42,7 +49,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
                 </div>
                 {/* sign in */}
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  {/* <p>Sign In</p> */}
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>

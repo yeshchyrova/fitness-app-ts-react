@@ -71,7 +71,7 @@ const OurClasses = ({ setSelectedPage }: IPage) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden gallery">
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item: IClass, idx) => (
               <Class

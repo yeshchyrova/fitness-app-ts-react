@@ -34,6 +34,7 @@ const Home = ({ setSelectedPage }: IPage) => {
             }}
           >
             <div className="relative">
+              <h1 className="hidden">Evogym. Evolutionary fitness</h1>
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
@@ -62,8 +63,8 @@ const Home = ({ setSelectedPage }: IPage) => {
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline transition duration-200 hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-              href={`${SelectedPage.ContactUs}`}
+              onClick={() => setSelectedPage(SelectedPage.Benefits)}
+              href={`#${SelectedPage.Benefits}`}
             >
               <p>Learn More</p>
             </AnchorLink>

@@ -5,7 +5,7 @@ import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/shared/HText";
 
 const ContactUs = ({ setSelectedPage }: IPage) => {
-  const inputStyles = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+  const inputStyles = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white focus:outline-none`;
 
   const {
     register,

@@ -9,7 +9,7 @@ interface IActionButton {
 const ActionButton = ({ children, setSelectedPage }: IActionButton) => {
   return (
     <AnchorLink
-      href={`${SelectedPage.ContactUs}`}
+      href={`#${SelectedPage.ContactUs}`}
       className="cursor-pointer rounded-md bg-secondary-500 px-10 py-2 transition duration-200 hover:bg-primary-500 hover:text-white"
       onClick={() => setSelectedPage(SelectedPage.ContactUs)}
     >
