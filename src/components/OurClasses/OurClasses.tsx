@@ -1,4 +1,4 @@
-import { IClass, SelectedPage } from "@/shared/types";
+import { IClass, IPage, SelectedPage } from "@/shared/types";
 import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
 import image3 from "@/assets/image3.png";
@@ -44,11 +44,7 @@ const classes: IClass[] = [
   },
 ];
 
-interface IOurClasses {
-  setSelectedPage: (value: SelectedPage) => void;
-}
-
-const OurClasses = ({ setSelectedPage }: IOurClasses) => {
+const OurClasses = ({ setSelectedPage }: IPage) => {
   return (
     <section id="ourclasses" className="w-full bg-primary-100 py-40">
       <motion.div

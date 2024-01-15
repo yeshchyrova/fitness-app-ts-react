@@ -5,6 +5,10 @@ export enum SelectedPage {
   ContactUs = "contactus",
 }
 
+export interface IPage {
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
 export interface IBenefitItem {
   icon: JSX.Element;
   title: string;

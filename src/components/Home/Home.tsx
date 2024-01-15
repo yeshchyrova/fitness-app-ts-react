@@ -1,6 +1,6 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import { SelectedPage } from "@/shared/types";
+import { IPage, SelectedPage } from "@/shared/types";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
@@ -9,11 +9,7 @@ import SponsorFortune from "@/assets/SponsorFortune.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
-interface IHome {
-  setSelectedPage: (value: SelectedPage) => void;
-}
-
-const Home = ({ setSelectedPage }: IHome) => {
+const Home = ({ setSelectedPage }: IPage) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (

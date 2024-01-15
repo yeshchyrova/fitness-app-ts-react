@@ -1,5 +1,5 @@
 import HText from "@/shared/HText";
-import { IBenefitItem, SelectedPage } from "@/shared/types";
+import { IBenefitItem, IPage, SelectedPage } from "@/shared/types";
 import {
   HomeModernIcon,
   UserGroupIcon,
@@ -37,12 +37,7 @@ const container = {
     transition: { staggerChildren: 0.2 },
   },
 };
-
-interface IBenefits {
-  setSelectedPage: (value: SelectedPage) => void;
-}
-
-const Benefits = ({ setSelectedPage }: IBenefits) => {
+const Benefits = ({ setSelectedPage }: IPage) => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
