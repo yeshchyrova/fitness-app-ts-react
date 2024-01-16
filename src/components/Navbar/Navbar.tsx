@@ -19,7 +19,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const navbarBackground = !isTopOfPage && "bg-primary-100 drop-shadow";
-
+  
   return (
     <nav>
       <div
@@ -35,7 +35,6 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
             </AnchorLink>
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
-
                 {/* NAVIGATE */}
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   {pages.map((page) => (
@@ -44,6 +43,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
                       page={page as SelectedPage}
                       selectedPage={selectedPage}
                       setSelectedPage={setSelectedPage}
+                      setIsMenuToggled={() => setIsMenuToggled(false)}
                     />
                   ))}
                 </div>
@@ -88,6 +88,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: INavbar) => {
                 page={page as SelectedPage}
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+                setIsMenuToggled={() => setIsMenuToggled(false)}
               />
             ))}
           </div>
