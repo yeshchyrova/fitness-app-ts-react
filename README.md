@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Evogym
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This documentation provides an information about website and also a minimal setup to get React working in Vite.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [Introduction](#introduction)
+* [Motivation](#motivation)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Introduction 
 
-- Configure the top-level `parserOptions` property like this:
+A small website of the fitness center provides information about different types of classes and groups to which you can sign up.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+## Motivation
+
+The project is educational and was created to master Typescript along with React.
+
+
+## Technologies
+
+In this project I used:
+
+* React 18.2.0
+* ReactDOM 18.2.0
+* Typescript 5.2.2
+* Tailwind CSS 3.4.1
+* Vite 5.0.8
+-----------
+* react-hook-form 7.49.3
+* heroicons 2.1.1
+* framer-motion 10.18.0
+* react-anchor-link-smooth-scroll 1.0.12
+
+
+## Setup
+To run this project, install it locally using npm:
+
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+$ npm install
+$ npm run dev
+```
